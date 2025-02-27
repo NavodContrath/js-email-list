@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    h1{
+        color: white;
+    }
+    ul{
+        background-color: lightgray;
+        border-radius: 20px;
+        border: 5px white solid;
+        padding: 1rem;
+        color: darkgreen;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    }
+
+}
+
+.displayer{
+    list-style: none;
+    color: white;
+}
