@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 .container{
+    padding: auto;
     h1{
         color: white;
-        margin-top: 5rem;
+        margin-top: 13.5rem;
     }     
 }
 
@@ -22,4 +23,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
 }
-
+footer{
+    margin-top: 13.5rem;
+    height: 60px;
+}
