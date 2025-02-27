@@ -1,8 +1,10 @@
 /* 
-📌Consegna
+1.📌Consegna
  - Attraverso l'apposita API di Boolean https://flynn.boolean.careers/exercises/api/random/mail generare 10 indirizzi email.
  - stamparli in pagina all'interno di una lista.
- 
+2. 📌Bonus
+ - Abbellire con CSS o Bootstrap
+ - Inserire un bottone che al click faccia il fetch altre 10 mail (sostituendo le altre) 
 */
 // Get DOM elements
 const displayerEl = document.querySelector('.displayer')
@@ -31,9 +33,9 @@ btnGenerateEl.addEventListener('click', () => {
                 displayerEl.appendChild(listItem)
             })
     }
+
 })
 btnGenerateNewEl.addEventListener('click', () => {
-
     //innerHTML blank to clear the html inside the displayer
     displayerEl.innerHTML = ''
 
@@ -43,6 +45,7 @@ btnGenerateNewEl.addEventListener('click', () => {
             .then((data) => {
                 console.log(data.response);
                 const listItem = document.createElement('li')
+                listItem.classList.add('text-danger')
                 listItem.innerText = data.response
                 displayerEl.appendChild(listItem)
             })
