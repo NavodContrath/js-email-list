@@ -9,7 +9,7 @@ btnGenerateEl.addEventListener('click', () => {
             .then((data) => {
                 console.log(data.response);
                 const listItem = document.createElement('li')
-                listItem.innerText = data.response
+                listItem.innerText = `${data.response}. `
                 displayerEl.appendChild(listItem)
                 displayerEl.classList.add('d-flex', 'gap-2', 'flex-wrap')
             })
@@ -25,7 +25,7 @@ btnGenerateNewEl.addEventListener('click', () => {
                 console.log(data.response);
                 const listItem = document.createElement('li')
                 listItem.classList.add('text-danger')
-                listItem.innerText = data.response
+                listItem.innerText = `${data.response}. `
                 displayerEl.appendChild(listItem)
             })
     }
